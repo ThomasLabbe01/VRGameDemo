@@ -14039,14 +14039,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270741212}
-  m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 187}
   m_LocalScale: {x: 0.0008, y: 0.0008, z: 0.0008}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 876834929}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 90, y: -90, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.638, y: -177.231}
@@ -20899,6 +20899,10 @@ PrefabInstance:
     - target: {fileID: 6129536775091525217, guid: 721c69b9f7ccb6b4bb819fc4ae0fe1e6, type: 3}
       propertyPath: m_Name
       value: LiveDisplayV1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129536775091525217, guid: 721c69b9f7ccb6b4bb819fc4ae0fe1e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6300182176677130378, guid: 721c69b9f7ccb6b4bb819fc4ae0fe1e6, type: 3}
       propertyPath: m_Pivot.x

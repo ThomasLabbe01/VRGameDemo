@@ -29,7 +29,7 @@ public class MatchPosition : MonoBehaviour
         if (targetObject != null)
         {
             // Match the position of the canvas to the targetObject
-            transform.position = targetObject.position;
+            textComponent.transform.position = targetObject.position;
 
             // Find the EMGRawReader GameObject in the scene
             GameObject emgObject = GameObject.Find("EMGRawReader"); // Replace with the actual name of your EMGRawReader GameObject
@@ -37,7 +37,7 @@ public class MatchPosition : MonoBehaviour
             // Access the EMG_accuracy directly from the EMGRawReader GameObject
             if (emgObject != null)
             {
-                textComponent.text = "EMG Accuracy: " + emgObject.GetComponent<EMGRawReader>().EMG_accuracy.ToString("F2");
+                textComponent.text = emgObject.GetComponent<EMGRawReader>().EMG_accuracy.ToString("F2");
             }
             else
             {
