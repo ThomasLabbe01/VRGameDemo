@@ -13,6 +13,8 @@ from libemg.utils import make_regex
 import numpy as np
 import time
 import threading
+import libemg_subclass
+
 
 HOST = 'localhost'  # Host IP address
 PORT = 12346       # Port number to listen on
@@ -92,7 +94,8 @@ def StartServer():
         odh.stop_listening()
         sgt = sgt_list[0]
         oc = PrepareClassifierEMaGer.prepare_classifier(sgt.num_reps, sgt.input_count, sgt.output_folder)
-        PrepareClassifierEMaGer.start_live_classifier(oc)
+        libemg_subclass.start_live_classifier(oc)
+
         
     except Exception as e:
         print(f"Server error: {e}")      
